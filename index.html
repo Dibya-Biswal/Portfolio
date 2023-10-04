@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Personal Portfolio Website - Dibya biswal</title>
+        <link rel="stylesheet" href="style1.css">
+        <script src="https://kit.fontawesome.com/29f15712db.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                <p>CSE Student</p>
+                 <h1>Hi, I'm <span>Dibya Biswal</span><br>From Bhubaneswar</h1>  
+                </div>
+
+            </div>
+
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg">
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>To pursue a job opportunity in a competitive environment that will challenge me to push my boundaries and expand my knowledge in the field of computer science</p>
+                        
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Technical Language</span><br>C, C++, and Java</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Machine Learning</span><br>Working on Google Colaboratory</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>22nd, March - 21st, june 2023</span><br>Intern at SAIL RSP</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br>B.Tech CSE AI and ML at C.V Raman Global University Bhubaneswar</li>
+                                <li><span>2018 - 2020</span><br>12th at SBD International School Bhadrak</li>
+                                <li><span>2018</span><br>10th at Sunshine Mission School Bhadrak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Build A Fun Portfolio Project with React and the OMBD API.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Java Development</h2>
+                        <p>Railway Reservation a web-based application for booking train tickets online.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>Machine Learning</h2>
+                        <p>Designing an Advanced Plant Disease Detection & Crop, Fertilizer Recommendation System using Machine Learning and CNN</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p></p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p></p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p></p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> dibyad.biswal@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 6370xxxxxx</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/dibya-biswal-201b5b18b/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Dibya-Biswal"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.hackerrank.com/dibyad_biswal"><i class="fa-brands fa-hackerrank"></i></a>
+                            <a href="https://www.instagram.com/the._.farawaygloom/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                       
+                        <a href="images/Dibya Biswal RESUME.pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+              <div class="copyright">
+                <p>Copyright @ Dibya Biswal</p>
+              </div>
+
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+         <script>
+
+              var sidemenu = document.getElementById("sidemenu")
+
+              function openmenu(){
+                sidemenu.style.right = 0;
+              }
+
+              function closemenu(){
+                sidemenu.style.right = -200px;
+              }
+
+
+         </script>
+
+    </body>
+</html>
